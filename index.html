@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>Daily Quotes | Inspirational Quote of the Day</title>
+    
+    <!-- Meta Description for SEO -->
+    <meta name="description" content="Get inspired with our quote of the day. Find daily inspiration and share quotes with friends on social media.">
+    
+    <!-- Keywords for SEO -->
+    <meta name="keywords" content="daily quotes, inspirational quotes, quote of the day, motivation, wisdom, success quotes, life quotes">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://yourwebsite.com/">
+
+    <!-- Open Graph Meta Tags (For Social Media Sharing) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Daily Quotes | Inspirational Quote of the Day">
+    <meta property="og:description" content="Get inspired with our quote of the day. Find daily inspiration and share quotes with friends on social media.">
+    <meta property="og:image" content="./img/jsimg.webp">
+    <meta property="og:url" content="https://yourwebsite.com/">
+    <meta property="og:site_name" content="Daily Quotes">
+
+    <!-- Twitter Card Meta Tags (For Twitter Sharing) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Daily Quotes | Inspirational Quote of the Day">
+    <meta name="twitter:description" content="Get inspired with our quote of the day. Find daily inspiration and share quotes with friends on social media.">
+    <meta name="twitter:image" content="./img/jsimg.webp">
+
+    <!-- Schema.org Markup for Rich Snippets -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Daily Quotes",
+      "url": "https://yourwebsite.com/",
+      "description": "Get inspired with our quote of the day. Find daily inspiration and share quotes with friends on social media.",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://yourwebsite.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="./img/logo.ico" type="image/x-icon">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quote-box">
+        <h2>Quote of the day</h2>
+        <blockquote id="quote">Loading...</blockquote>
+        <span id="author">Loading...</span>
+        <div>
+            <button onclick="getquote(api_url)">New Quote</button>
+            <button onclick="tweet()"><img src="./img/icons8-twitter-50.png" alt="">Tweet</button>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
